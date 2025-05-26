@@ -64,7 +64,7 @@
     }
     
     .button-icon {
-        font-size: 40px;
+        font-size: 90px;
         margin-bottom: 10px;
         flex: 1;
         display: flex;
