@@ -106,10 +106,17 @@
                     <input class="input-customizado" name="txtData" type="date" value="<?php echo unserialize($_SESSION['Usuario'])->getDataNascimento(); ?>" />
                 </div>
 
+                 <div class="w3-section">
+                    <label>Senha</label>
+                    <input class="input-customizado" name="txtSenha" type="text" value="<?php echo unserialize($_SESSION['Usuario'])->getSenha(); ?>" />
+                </div>
+
                 <div class="w3-section">
                     <label>Email</label>
                     <input class="input-customizado" name="txtEmail" type="text" value="<?php echo unserialize($_SESSION['Usuario'])->getEmail(); ?>" />
                 </div>
+
+               
 
                 <div class="w3-section w3-center">
                     <button class="w3-button w3-padding32 w3-round-large form-button" name="btnAtualizar" type="submit">
