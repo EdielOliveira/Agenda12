@@ -141,7 +141,7 @@ elseif (isset($_POST["btnExcluirEP"])) {
 
 // <!-- Bloco: Adição de outras formações acadêmicas -->
 elseif (isset($_POST["btnAddOutFormacao"])) {
-    if (empty($_POST["txtInicioOFA"]) || empty($_POST["txtFimOFA"]) || empty($_POST["txtDescOFA"])) {
+    if (empty($_POST["txtInicioOF"]) || empty($_POST["txtFimOF"]) || empty($_POST["txtDescOF"])) {
         $_SESSION['erro'] = "Preencha todos os campos para adicionar a formação.";
         include_once "../Mensagens/operacaoNaoRealizada.php";
         exit;
@@ -153,9 +153,9 @@ elseif (isset($_POST["btnAddOutFormacao"])) {
     $usuario = unserialize($_SESSION["Usuario"]);
 
     if ($ofController->inserir(
-        date("Y-m-d", strtotime($_POST["txtInicioOFA"])),
-        date("Y-m-d", strtotime($_POST["txtFimOFA"])),
-        $_POST["txtDescOFA"],
+        date("Y-m-d", strtotime($_POST["txtInicioOF"])),
+        date("Y-m-d", strtotime($_POST["txtFimOF"])),
+        $_POST["txtDescOF"],
         $usuario->getID()
     )) {
         include_once "../Mensagens/informacaoInserida.php";
