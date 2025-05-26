@@ -27,7 +27,7 @@
     ?>
 
     <!-- Menu fixo no topo -->
-    <nav class="topnav">
+    <nav class="topnav" style="height: 55px;">
         <a href="#home" class="logo-link">
             <img src="/Agenda12/img/LogoGLobo.png" alt="Logo" class="nav-logo" />
         </a>
