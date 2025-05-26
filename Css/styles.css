@@ -1,0 +1,67 @@
+/* Estilos globais */
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('/Agenda12/img/ImagemFundo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+}
+
+/* BARRA DE ROLAGEM PERSONALIZADA */
+/* Funciona no Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+    border-left: 1px solid #2e002e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, 
+                #761069 0%, 
+                #9c27b0 50%, 
+                #DC1DC3 100%);
+    border-radius: 8px;
+    border: 3px solid #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, 
+                #DC1DC3 0%, 
+                #9c27b0 50%, 
+                #761069 100%);
+}
+
+/* Firefox */
+html {
+    scrollbar-color: #761069 #000000;
+    scrollbar-width: thin;
+}
+
+/* Edge e outros navegadores modernos */
+@supports (-ms-ime-align:auto) {
+    body {
+        -ms-overflow-style: none;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
+}

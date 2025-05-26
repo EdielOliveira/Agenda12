@@ -1,0 +1,92 @@
+/* Cards Container */
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 32px;
+}
+
+/* Card Base */
+.card {
+    width: 100%;
+    height: 325px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito hover sutil */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Card 1 - Cinza */
+.card-gray {
+    background-color: #808080;
+}
+
+/* Card 2 - Roxo */
+.card-purple {
+    background-color: #761069;
+}
+
+/* Card 3 - Cinza */
+.card-gray-2 {
+    background-color: #808080;
+}
+
+/* Cabeçalho do Card */
+.card-header {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Texto do Card */
+.card-text {
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+/* Ícones específicos com tamanhos originais */
+.card-icon-pencil {
+    height: 90px;
+    margin: 20px 0;
+}
+
+.card-icon-check {
+    height: 80px;
+    margin: 20px 0;
+}
+
+.card-icon-stars {
+    height: 40px;
+    margin: 20px 0;
+}
+
+/* Ajustes para o botão-card */
+button.card {
+    outline: none; /* Remove outline ao focar */
+    font-family: inherit; /* Mantém a fonte consistente */
+    background-color: #761069; /* Garante a cor de fundo */
+}
+
+button.card:hover {
+    transform: translateY(-5px);
+    background-color: #761069; /* Mantém a cor no hover */
+}
+
+button.card:active {
+    transform: translateY(0); /* Efeito de clique */
+}

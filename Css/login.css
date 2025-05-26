@@ -1,0 +1,140 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('/Agenda12/img/BackGround.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Logo styles */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 60px;
+}
+
+/* Form styles */
+.auth-form {
+  background-color: rgb(0, 0, 0);
+  padding: 30px;
+  border-radius: 12px;
+  color: white;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.auth-form.register-form {
+  width: 450px;
+}
+
+.auth-form h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.auth-form h2 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Input fields */
+.form-group {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.form-group:last-of-type {
+  margin-bottom: 35px;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 8px;
+  border: none;
+  border-bottom: 2px solid white;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.register-form .form-control {
+  width: 96%;
+}
+
+/* Link styles */
+.auth-link {
+  margin-top: 20px;
+  font-size: 15px;
+  color: white;
+}
+
+.auth-link a {
+  color: rgb(138, 34, 156);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+/* Button styles */
+.auth-btn {
+  padding: 10px;
+  background: linear-gradient(to right, #DC1DC3, #761069);
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.auth-btn.login-btn {
+  width: 40%;
+}
+
+.auth-btn.register-btn {
+  width: 40%;
+  padding: 15px;
+}
+
+.auth-btn:hover {
+  opacity: 0.9;
+}
+
+/* Autofill styles */
+input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
