@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Oxi</title>
+    <title>Enlatados Juarez</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
@@ -27,7 +27,8 @@
     ?>
 
     <!-- Menu fixo no topo -->
-    <nav class="topnav" style="height: 55px;">
+    
+    <nav class="topnav">
         <a href="#home" class="logo-link">
             <img src="/Agenda12/img/LogoGLobo.png" alt="Logo" class="nav-logo" />
         </a>
@@ -37,9 +38,8 @@
         <a href="#expProf">Exp. Profissional</a>
         <a href="#Outformacao">Outras Formações</a>
     </nav>
-
     <!-- Seção Home -->
-    <section id="home" class="main-section">
+    <section id="home" class="main-section" >
         <div class="home-container">
             <div class="home-header">
                 <h1 class="main-title">SISTEMA DE CURRÍCULOS</h1>
